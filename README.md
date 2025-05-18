@@ -1,5 +1,4 @@
-# goTranslate
-GoTranslate
+# GoTranslate 
 
 O GoTranslate é um projeto feito dentro do google colab, desenvolvido durante a imersão IA da Alura.
 
