@@ -41,3 +41,13 @@ Basta abrir o arquivo projeto imersão IA.ipynb no google colab e rodar tudo, na
 - Por fim é perguntado se o cliente deseja continuar
 - A resposta do cliente é tratada por um agente de continuidade para que o cliente não seja obrigado a enviar uma mensagem fixa e a comunicação fique mais natural
 - Se o cliente desejar continuar o sistema volta para o primeiro agente, caso contrario se despede do usuario
+
+### Maquina de estados
+
+- Para gerenciar o chat foi criado uma maquina de estados, a qual é dividida da seguinte forma:
+   - TEMA        : Momento em que o sistema espera o cliente escolher o tema
+   - NIVEL       : Momento em que o sistema espera o cliente escolher o nível de dificuldade
+   - PROCESSANDO : Momento em que o sistema está processando, nesse ponto o cliente não consegue enviar mensagens
+   - RESPOSTA    : Momento em que o sistema espera a resposta do cliente
+   - CONTINUAR   : Momento em que o sistema está esperando o cliente decidir se quer continuar
+   - FIM         : Sistema finalizado
